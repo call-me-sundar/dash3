@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Navber from './Devops.js/Navber'
 import SideNavbar from './Devops.js/SideNavbar'
 import Routing from './Routing'
+import SIdeNav from './Devops.js/SIdeNav'
 
 
 
@@ -10,7 +11,8 @@ function App() {
    <div>
     <BrowserRouter>
     <div id="wrapper">
-      <SideNavbar/>
+      {/* <SideNavbar/> */}
+      <SIdeNav/> 
       <div id="content-wrapper" className="d-flex flex-column">
       <div id="content">
         <Navber/>

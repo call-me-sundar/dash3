@@ -11,7 +11,7 @@ export default function Navber() {
                 </button>
                     <h3>Hi, Admin</h3>
                 <div className='ms-auto'>
-                    <button type="button" className="btn btn-outline-danger py-1 px-3 fs-6">Logout</button>
+                    <button type="button" className="btn btn-outline-danger py-1 px-3 fs-6 shadow-none">Logout</button>
                 </div>
 
             </nav>

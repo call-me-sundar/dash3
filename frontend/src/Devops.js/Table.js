@@ -77,13 +77,13 @@ export default function Table() {
     }
 
 
-    const filteredData = apiData.filter((value) =>
-        value.column_1.toString().toLowerCase().includes(searchQuery.toLowerCase()) ||
-        value.column_2.toString().toLowerCase().includes(searchQuery.toLowerCase()) ||
-        value.column_25.toString().toLowerCase().includes(searchQuery.toLowerCase()));
+    // const filteredData = apiData.filter((value) =>
+    //     value.column_1.toString().toLowerCase().includes(searchQuery.toLowerCase()) ||
+    //     value.column_2.toString().toLowerCase().includes(searchQuery.toLowerCase()) ||
+    //     value.column_25.toString().toLowerCase().includes(searchQuery.toLowerCase()));
 
         
-    console.log("filteredData =>>>>>>>>>>>>>>>>>>>>>>>,",filteredData)
+    // console.log("filteredData =>>>>>>>>>>>>>>>>>>>>>>>,",filteredData)
 
     return (
         <div>
@@ -138,7 +138,7 @@ export default function Table() {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredData.map((value, index) => (
+                        {apiData.map((value, index) => (
                             <tr key={index}>
                                 {Object.keys(value).map((key, v) => (
                                     <td className={'p-3 text-center column_'} key={key}>{value[key]}</td>

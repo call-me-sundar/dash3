@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function SideNavbar() {
     return (
-        <div> <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <div> <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion position-sticky top-0" id="accordionSidebar">
 
 
             <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -35,6 +35,21 @@ export default function SideNavbar() {
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i className="fas fa-fw fa-cog"></i>
                     <span>Components</span>
+                </Link>
+                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div className="bg-white py-2 collapse-inner rounded">
+                        <h6 className="collapse-header">Custom Components:</h6>
+                        <a className="collapse-item" href="buttons.html">Buttons</a>
+                        <a className="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <li className="nav-item">
+                <Link to='/Table2' className="nav-link collapsed"  data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i className="fas fa-fw fa-cog"></i>
+                    <span>Table2</span>
                 </Link>
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">

@@ -10,11 +10,10 @@ function Routing() {
         // <BrowserRouter>
 
         <Routes>
-
-
             <Route path="/" element={<Table />} />
             <Route path="/tabledatas" element={<TableDatas/>} />
             <Route path="/home" element={<Components />} />
+            {/* <Route path="/table2" element={<Table2 />} /> */}
         </Routes>
 
     //  </BrowserRouter>
